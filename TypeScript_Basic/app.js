@@ -1,3 +1,4 @@
+"use strict";
 /* Wellcome typescript*/
 // const num1 = document.querySelector('#num1') as HTMLInputElement
 // const num2 = document.querySelector('#num2') as HTMLInputElement
@@ -8,10 +9,10 @@
 /* Enum */
 var MOVE;
 (function (MOVE) {
-    MOVE[MOVE["Up"] = 1] = "Up";
-    MOVE[MOVE["Down"] = 2] = "Down";
-    MOVE[MOVE["Left"] = 7] = "Left";
-    MOVE[MOVE["Right"] = 8] = "Right";
+    MOVE[MOVE["Up"] = 0] = "Up";
+    MOVE[MOVE["Down"] = 1] = "Down";
+    MOVE[MOVE["Left"] = 2] = "Left";
+    MOVE[MOVE["Right"] = 3] = "Right";
 })(MOVE || (MOVE = {}));
-var a = MOVE.Down + 2;
-console.log(a + '');
+let a = MOVE.Down;
+console.log('MOVE ' + a);

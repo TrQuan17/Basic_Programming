@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "lite-server",
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "TrQuan17",
@@ -11,5 +12,8 @@
   "description": "",
   "dependencies": {
     "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
   }
 }
