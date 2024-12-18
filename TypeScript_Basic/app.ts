@@ -16,6 +16,6 @@ enum MOVE {
     Right
 }
 
-let a = MOVE.Down + 2
+let a = MOVE.Down
 
-console.log(a + '')
+console.log('MOVE ' + a)
