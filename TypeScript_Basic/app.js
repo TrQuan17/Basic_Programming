@@ -14,5 +14,4 @@ var MOVE;
     MOVE[MOVE["Left"] = 2] = "Left";
     MOVE[MOVE["Right"] = 3] = "Right";
 })(MOVE || (MOVE = {}));
-let a = MOVE.Down;
-console.log('MOVE ' + a);
+console.log(MOVE);
