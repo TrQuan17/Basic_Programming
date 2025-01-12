@@ -1,3 +1,3 @@
-let a = 10
+const log = (mess: string) => { console.log(mess) }
 
-const b = 20
+log('Hello world!')
