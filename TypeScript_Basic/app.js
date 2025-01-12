@@ -1,3 +1,4 @@
 "use strict";
-let a = 10;
-const b = 20;
+const log = (mess) => { console.log(mess); };
+log('Hello world!');
+//# sourceMappingURL=app.js.map

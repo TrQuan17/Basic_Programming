@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "file": "app.js",
+    "sourceRoot": "",
+    "sources": [
+        "app.ts"
+    ],
+    "names": [],
+    "mappings": ";AAAA,MAAM,GAAG,GAAG,CAAC,IAAY,EAAE,EAAE,GAAG,OAAO,CAAC,GAAG,CAAC,IAAI,CAAC,CAAA,CAAC,CAAC,CAAA;AAEnD,GAAG,CAAC,cAAc,CAAC,CAAA"
+}
