@@ -1,3 +1,5 @@
-const log = (mess: string) => { console.log(mess) }
+function log(mess: string): void {
+    console.log(mess)
+}
 
 log('Hello world!')
