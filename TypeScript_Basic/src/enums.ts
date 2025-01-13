@@ -5,5 +5,3 @@ enum MOVE {
     Left,
     Right
 }
-
-console.log(MOVE)
