@@ -3,3 +3,4 @@ function log(mess: string): void {
 }
 
 log('Hello world!')
+
