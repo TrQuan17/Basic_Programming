@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server",
+    "start": "nodemon dist/app.js",
     "tsc": "tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "nodemon": "^3.1.9"
   },
   "devDependencies": {
     "typescript": "^5.7.2"
