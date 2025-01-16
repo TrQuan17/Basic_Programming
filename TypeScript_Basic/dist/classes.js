@@ -1,5 +1,5 @@
 "use strict";
-class Account {
+class Person {
     constructor(username, pass, first, last) {
         this.username = username;
         this.password = pass;
@@ -10,6 +10,6 @@ class Account {
         return `${this.firstName} ${this.lastName}`;
     }
 }
-const account = new Account('TrQuan17', '12345678');
-console.log(account.showFullName());
+const per = new Person('TrQuan17', '12345678');
+console.log(per.showFullName());
 //# sourceMappingURL=classes.js.map

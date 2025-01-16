@@ -1,4 +1,4 @@
-class Account {
+class Person {
     private username?: string
     public password?: string
     public firstName?: string
@@ -21,6 +21,6 @@ class Account {
     }
 }
 
-const account = new Account('TrQuan17', '12345678')
+const per = new Person('TrQuan17', '12345678')
 
-console.log(account.showFullName())
+console.log(per.showFullName())
