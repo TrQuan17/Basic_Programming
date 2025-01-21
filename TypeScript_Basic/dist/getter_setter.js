@@ -1,4 +1,3 @@
-"use strict";
 class Department {
     constructor(name, employee, employees = []) {
         this.name = name;
@@ -22,4 +21,5 @@ class Department {
 const dep = new Department('IT Department');
 dep.lastEmployee = 'TrQuan17';
 console.log(dep.lastEmployee);
+export {};
 //# sourceMappingURL=getter_setter.js.map

@@ -26,3 +26,5 @@ const dep = new Department('IT Department')
 
 dep.lastEmployee = 'TrQuan17'
 console.log(dep.lastEmployee)
+
+export {}
