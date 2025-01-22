@@ -1,15 +1,19 @@
-class History {
-    static instance(id: string, log: string, type: string) {
+class Singleton {
+    static instance: Singleton
 
+    private constructor() {}
+
+    static getInstance() {
+        if (!this.instance) {
+            this.instance = new Singleton()
+        }
+
+        return this.instance
     }
     
-    private constructor(
-        private id: string,
-        private log: string,
-        private type: string
-    ) {}
 }
 
-// const updateHistory = new History()
+const singleton1 = Singleton.getInstance()
+const singleton2 = Singleton.getInstance()
 
-export {}
+console.log(singleton1 === singleton2)  // true
