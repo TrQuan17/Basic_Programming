@@ -1,0 +1,1 @@
+{"version":3,"file":"singletons_pattern.js","sourceRoot":"","sources":["../src/singletons_pattern.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO;IACT,MAAM,CAAC,QAAQ,CAAC,EAAU,EAAE,GAAW,EAAE,IAAY;IAErD,CAAC;IAED,YACY,EAAU,EACV,GAAW,EACX,IAAY;QAFZ,OAAE,GAAF,EAAE,CAAQ;QACV,QAAG,GAAH,GAAG,CAAQ;QACX,SAAI,GAAJ,IAAI,CAAQ;IACrB,CAAC;CACP"}
