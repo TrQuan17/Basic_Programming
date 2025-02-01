@@ -21,4 +21,12 @@ const getTemperature = (season) => {
             return _exhaustiveCheck;
     }
 };
+// let obj: unknown
+// let variable: any
+// let age: number = 5
+// // Success
+// obj = variable
+// obj = age
+// // Error: 'obj' is of type 'unknown'.ts(18046)
+// obj.call()
 //# sourceMappingURL=never.js.map

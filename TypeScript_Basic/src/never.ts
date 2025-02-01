@@ -20,3 +20,14 @@ const getTemperature = (season: SEASON) => {
             return _exhaustiveCheck
     }
 }
+
+// let obj: unknown
+// let variable: any
+// let age: number = 5
+
+// // Success
+// obj = variable
+// obj = age
+
+// // Error: 'obj' is of type 'unknown'.ts(18046)
+// obj.call()

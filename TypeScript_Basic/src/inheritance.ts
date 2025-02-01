@@ -1,31 +1,39 @@
-// class Department {
-//     constructor(
-//         private id: string,
-//         private name: string,
-//         protected employees: string[] = []
-//     ) { }
-// }
+class Department {
+    constructor(
+        private id: string,
+        private name: string,
+        protected employees: string[] = []
+    ) { }
 
-// class ITDepartment extends Department {
-//     constructor(
-//         id: string,
-//         employees: string[],
-//         private mainTech: string
-//     ) {
-//         super(id, 'IT Department', employees)
-//     }
+    get departmentName() {
+        return this.name
+    }
+}
 
-//     getAdmin() {
-//         return this.employees[0]
-//     }
+class ITDepartment extends Department {
+    constructor(
+        id: string,
+        employees: string[],
+        private mainTech: string
+    ) {
+        super(id, 'IT Department', employees)
+    }
 
-//     getMainTech() {
-//         return this.mainTech
-//     }
-// }
+    getAdmin() {
+        return this.employees[0]
+    }
 
-// const IT = new ITDepartment('1', ['Quan', 'TrQuan17', 'QuanTT'], 'Web App')
+    getMainTech() {
+        return this.mainTech
+    }
+}
 
-// console.log(IT.getAdmin())
+const IT = new ITDepartment('1', ['Quan', 'TrQuan17', 'QuanTT'], 'Web App')
 
-// console.log(IT.getMainTech())
+console.log(IT.getAdmin())      // 'Quan'
+
+console.log(IT.getMainTech())   // 'Web App'
+
+console.log(IT.departmentName)  // 'IT Department'
+
+export {}
