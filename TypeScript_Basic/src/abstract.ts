@@ -43,3 +43,5 @@ const employee: Employee = {
 IT.addEmployees(employee)
 
 console.log(IT.employeesList)
+
+export {}

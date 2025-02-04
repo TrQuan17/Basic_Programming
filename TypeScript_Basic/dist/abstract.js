@@ -1,4 +1,3 @@
-"use strict";
 class Department {
     constructor(id) {
         this.id = id;
@@ -27,4 +26,5 @@ const employee = {
 };
 IT.addEmployees(employee);
 console.log(IT.employeesList);
+export {};
 //# sourceMappingURL=abstract.js.map
