@@ -48,9 +48,53 @@ numberStorage.add(1, 2, 4, 5, 4)
 
 console.log(numberStorage.dataList)
 
- // With string type
- const stringStorage = new DataStorage<string>()
+// With string type
+const stringStorage = new DataStorage<string>()
 
- stringStorage.add('VietNam', 'China', 'Singapore')
+stringStorage.add('VietNam', 'China', 'Singapore')
 
- console.log(stringStorage.dataList) // [ 1, 2, 4, 5, 4 ]
+console.log(stringStorage.dataList) // [ 1, 2, 4, 5, 4 ]
+
+/* Partial utility types */
+
+interface Setting {
+    id: string,
+    theme: 'LIGHT' | 'DARK'
+    language: string
+    background: string
+}
+
+// Error: Property 'background' is missing in type '{ id: string; theme: 'LIGHT'; language: string; }'
+//        but required in type 'Setting'.ts(2741)
+// const setting: Setting = {
+//     id: '1',
+//     theme: 'LIGHT',
+//     language: 'VN',
+// }
+
+// Success
+const settingP: Partial<Setting> = {
+    id: '1',
+    theme: 'LIGHT'
+}
+
+/* Readonly utility type */
+const setting: Setting = {
+    id: '1',
+    theme: 'LIGHT',
+    language: 'VN',
+    background: 'summer.jpg'
+}
+
+// Success
+setting.id = '2'
+
+const settingR: Readonly<Setting> = {
+    id: '1',
+    theme: 'DARK',
+    language: 'EN',
+    background: 'summer.jpg'
+}
+
+// Error: Cannot assign to 'id' because it is a read-only property.ts(2540)
+// settingR.id = '1'

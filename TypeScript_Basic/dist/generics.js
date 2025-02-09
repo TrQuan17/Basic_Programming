@@ -38,4 +38,33 @@ console.log(numberStorage.dataList);
 const stringStorage = new DataStorage();
 stringStorage.add('VietNam', 'China', 'Singapore');
 console.log(stringStorage.dataList); // [ 1, 2, 4, 5, 4 ]
+// Error: Property 'background' is missing in type '{ id: string; theme: 'LIGHT'; language: string; }'
+//        but required in type 'Setting'.ts(2741)
+// const setting: Setting = {
+//     id: '1',
+//     theme: 'LIGHT',
+//     language: 'VN',
+// }
+// Success
+const settingP = {
+    id: '1',
+    theme: 'LIGHT'
+};
+/* Readonly utility type */
+const setting = {
+    id: '1',
+    theme: 'LIGHT',
+    language: 'VN',
+    background: 'summer.jpg'
+};
+// Success
+setting.id = '2';
+const settingR = {
+    id: '1',
+    theme: 'DARK',
+    language: 'EN',
+    background: 'summer.jpg'
+};
+// Error: Cannot assign to 'id' because it is a read-only property.ts(2540)
+// settingR.id = '1'
 //# sourceMappingURL=generics.js.map
