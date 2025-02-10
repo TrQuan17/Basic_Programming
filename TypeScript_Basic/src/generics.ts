@@ -98,3 +98,5 @@ const settingR: Readonly<Setting> = {
 
 // Error: Cannot assign to 'id' because it is a read-only property.ts(2540)
 // settingR.id = '1'
+
+export {}

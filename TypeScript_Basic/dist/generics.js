@@ -1,4 +1,3 @@
-"use strict";
 const convertString = (data) => data === null || data === void 0 ? void 0 : data.toString();
 console.log(convertString(5));
 console.log(convertString([1, 2, 3]));
@@ -65,6 +64,5 @@ const settingR = {
     language: 'EN',
     background: 'summer.jpg'
 };
-// Error: Cannot assign to 'id' because it is a read-only property.ts(2540)
-// settingR.id = '1'
+export {};
 //# sourceMappingURL=generics.js.map
