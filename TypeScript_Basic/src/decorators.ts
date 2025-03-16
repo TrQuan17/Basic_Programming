@@ -1,24 +1,22 @@
-function Logger(log: string) {
-    console.log(log)
+function Logger() {
+    console.log('LOGGER FACTORY')
 
     return function(args: Function) {
-        console.log(args.toString())
+        console.log('RETURN LOGGER')
     }
 }
 
-@Logger('LOG - SETTING')
-class Setting {
-    constructor(
-        private id?: string,
-        private theme?: 'LIGHT' | 'DARK',
-        private language?: string,
-        private background?: string
-    ) {}
+function Display() {
+    console.log('DISPLAY FACTORY')
 
-    set setLanguage(lang: string) {
-        this.language = lang
+    return function(args: Function) {
+        console.log('RETURN DISPLAY')
     }
 }
+
+@Logger()
+@Display()
+class Setting {}
 
 // LOG - SETTING
 // class Setting {
